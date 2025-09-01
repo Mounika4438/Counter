@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #counter-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 250px;
+    }
+
+    #count-display {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: inline-block;
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 8px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    #decrement-btn {
+      background-color: #ff6b6b;
+      color: white;
+    }
+
+    #decrement-btn:hover {
+      background-color: #e84141;
+    }
+
+    #reset-btn {
+      background-color: #feca57;
+      color: white;
+    }
+
+    #reset-btn:hover {
+      background-color: #e1b12c;
+    }
+
+    #increment-btn {
+      background-color: #1dd1a1;
+      color: white;
+    }
+
+    #increment-btn:hover z{
+      background-color: #10ac84;
+    }
+  </style>
+</head>
+<body>
+  <div id="counter-container">
+    <span id="count-display">0</span>
+    <br>
+    <button id="decrement-btn">Decrement</button>
+    <button id="reset-btn">Reset</button>
+    <button id="increment-btn">Increment</button>
+    <script src="counter.js"></script>
+  </div>
+</body>
+</html>
