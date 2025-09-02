@@ -19,8 +19,10 @@ incrementBtn.addEventListener('click', () => {
 });
 
 decrementBtn.addEventListener('click', () => {
+    if(count>0){
     count--;
     updateDisplay();
+    }
 });
 
 resetBtn.addEventListener('click', () => {
